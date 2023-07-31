@@ -1,0 +1,125 @@
+@import '../Scss/Style.scss';
+
+.main_container{
+    width: 100vw;
+    height: 90vh;
+    background: #2B4447;
+}
+
+.content_container{
+    width: 100vw;
+    height: 80vh;
+    // background: #001818;
+    float: left;
+}
+
+.slide_container{
+    width: 76vw;
+    height: 100%;
+    margin-left: 17vw;
+    margin-top: -35px;
+    background: #545454;
+    float: left;
+}
+
+.index_container{
+    width: 2.5px;
+    height: 40vh;
+    margin-left: 70px;
+    margin-top: 100px;
+    // background: #000000;
+}
+
+.numb_one{
+    width: 4px;
+    height: 32%;
+    background: #E6B27E;
+    // opacity: 30%;
+}
+
+.numb_two{
+    width: 4px;
+    height: 32%;
+    margin-top: 6px;
+    background: #ECE8DF;
+}
+
+.numb_three{
+    width: 4px;
+    height: 32%;
+    margin-top: 6px;
+    background: #ECE8DF;
+    // opacity: 30%;
+}
+
+.text_box{
+    width: 30vw;
+    height: 45vh;
+    margin-top: -400px;
+    margin-left: 140px;
+    // background: red;
+    float: left;
+}
+
+.brand_heading{
+    font-family: Inter;
+    font-weight: 400;
+    padding-left: 10px;
+    font-size: 100px;
+    color: #DAEFDE;
+    margin: 0;
+    float: left;
+}
+
+.intro_text{
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 150px;
+    font-size: 20px;
+    color: #ECE8DF;
+}
+
+.more_btn{
+    width: 190px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 70px;
+    // background: black;
+    float: left;
+}
+
+.more_text{
+    margin-left: 10px;
+    margin-top: 2px;
+    letter-spacing: 8px;
+    font-size: 20px;
+    color: #EBA182;
+    float: left;
+}
+
+.arrow{
+    width: 80px;
+    height: 15px;
+    // background: red;
+    margin-left: 0px;
+    margin-top: 7px;
+    background-image: url('../Assets/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    float: left;
+}
+
+.more_btn:hover{
+    width: 200px;
+    height: 50px;
+        .more_text{
+            font-size: 22px;
+            color: #ECE8DF;
+        }
+        .arrow{
+            width: 85px;
+            height: 17px;
+            background-image: url('../Assets/arrow_hover.svg');
+        }
+}
