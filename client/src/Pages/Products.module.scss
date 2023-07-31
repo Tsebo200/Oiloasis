@@ -14,6 +14,13 @@
     float: left;
 }
 
+.bag_box{
+    width: 100%;
+    height: 37vh;
+    background: blue;
+    float: left;
+}
+
 .right_side{
     width: 70vw;
     height: 90vh;
@@ -23,10 +30,9 @@
 
 .filter_section{
     width: 100%;
-    height: 30vh;
-
+    height: 50vh;
     padding-top: 20px;
-    background: rgb(119, 119, 225);
+    // background: rgb(119, 119, 225);
 }
 
 .filter_text{
@@ -35,5 +41,12 @@
     padding-left: 50px;;
     font-weight: 400;
     color: #E6B27E;
+    float: left;
+}
+
+.filter_box{
+    width: 100%;
+    height: 42vh;
+    background: green;
     float: left;
 }

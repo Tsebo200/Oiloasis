@@ -12,9 +12,11 @@ function Products() {
       <div className={styles.main_container}>
       <Logo/>
             <div className={styles.left_side}>
-              <div className={styles.filter_section}>
+                <div className={styles.filter_section}>
                 <p className={styles.filter_text}>Filter</p>
+                <div className={styles.filter_box}></div>
               </div>
+            <div className={styles.bag_box}></div>
 
             </div>
             <div className={styles.right_side}></div>
