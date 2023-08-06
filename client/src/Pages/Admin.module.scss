@@ -3,7 +3,7 @@
 .main_container{
     width: 100vw;
     height: 90vh;
-    background: #ECE8DF;
+    background: $accent_three;
 }
 
 .left_side{
@@ -12,13 +12,23 @@
     margin-top: 5vh;
     margin-left: -130px;
     background: #2b2b2b;
+    // background: $accent_three;
     float: left;
 }
+
+.spells_container{
+    width: 90%;
+    height: 85%;
+    margin-left: 5%;
+    background: grey;
+    float: left;
+}
+
 
 .right_side{
     width: 35vw;
     height: 90vh;
-    background: #1e1e1e;
+    background: $accent_three;
     float: left;
 }
 
@@ -33,7 +43,7 @@
 .add_form_container{
     width: 90%;
     height: 86vh;
-    background: #2B4447;
+    background: $dark_green;
     margin-top: 30px;
     margin-left: 25px;
     border-radius: 40px;
@@ -43,14 +53,346 @@
 .add_product_text{
     font-size: x-large;
     font-family: Inter;
-    color: #E6B27E;
+    color: $text_accent;
     font-weight: 400;
-    margin-left: 50px;
+    margin-left: -180px;
     margin-top: 30px;
-    float: left;
+}
+
+.heading_cont{
+    width: 100%;
+    height: 40px;
+    // background: blue;
+}
+
+::placeholder{
+    color: $light_green; 
 }
 
 .product_name{
-    margin-top: 50px;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    background: $green;
+    color: $light_green;
+    font-size: 15px;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    padding-left: 20px;
+    box-sizing: border-box;
     float: left;
 }
+
+.product_price{
+    width: 100%;
+    height: 55px;
+  margin-top: 10px;
+    border-radius: 5px;
+    background: $green;
+    color: $light_green;
+    font-size: 15px;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.product_desc{
+    width: 100%;
+    height: 80px;
+  margin-top: 10px;
+    border-radius: 5px;
+    background: $green;
+    color: $light_green;
+    font-size: 15px;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.product_disclaim{
+    width: 100%;
+    height: 80px;
+  margin-top: 10px;
+    border-radius: 5px;
+    background: $green;
+    color: $light_green;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.form_input_container{
+    width: 85%;
+    height: 70vh;
+    margin-left: 7%;
+    margin-top: 20px;
+    float: left;
+}
+
+.product_size{
+    width: 45%;
+    height: 55px;
+  margin-top: 10px;
+    background: $green;
+    color: $light_green;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    float: left;
+}
+
+.product_quantity{
+    width: 45%;
+    height: 55px;
+  margin-top: 10px;
+    margin-left: 10%;
+    background: $green;
+    color: $light_green;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    float: left;
+}
+
+.product_color_black{
+    width: 45%;
+    height: 55px;
+  margin-top: 10px;
+    background: $green;
+    color: $light_green;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    float: left;
+}
+
+.product_color_white{
+    width: 45%;
+    height: 55px;
+  margin-top: 10px;
+    margin-left: 10%;
+    background: $green;
+    color: $light_green;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    float: left;
+}
+
+
+.product_color_silver{
+    width: 45%;
+    height: 55px;
+  margin-top: 10px;
+    background: $green;
+    color: $light_green;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    float: left;
+}
+
+.product_color_gold{
+    width: 45%;
+    height: 55px;
+    margin-left: 10%;
+  margin-top: 10px;
+    background: $green;
+    color: $light_green;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    float: left;
+}
+
+.new_product_btn{
+  width: 100%;
+  height: 55px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-style: none;
+  text-align: center;
+  background: $accent_one;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $light_green;
+}
+
+.new_product_btn:hover{
+    border: 1px solid $accent_three;
+    background: none;
+    cursor: pointer;
+  }
+
+.detail_one{
+  width: 30%;
+  height: 45%;
+  background: $dark_green;
+  border-radius: 10px;
+  float: left;
+}
+
+.row_one{
+  width: 100%;
+  height: 45px;
+  background: blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: flex-start;
+}
+  .spell_icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 360px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background: $darkest_green;
+    background-image: url('../Assets/DropperGoldCap.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    align-self: center;
+  }
+
+  .spell_name{
+    font-family: Inter;
+    font-weight: 600;
+    color: $accent_three;
+    align-self: center;
+    margin-left: 10px;
+  }
+
+  .delete_btn{
+    width: 15px;
+    height: 23px;
+    align-self: center;
+    margin-left: 15px;
+    background-image: url('../Assets/TashBin.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .delete_btn:hover{
+    width: 15px;
+    height: 23px;
+    align-self: center;
+    margin-left: 15px;
+    background-image: url('../Assets/TashBinHovered.svg');
+  }
+
+  .row_two{
+    background: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+  }
+
+.left_col{
+  width: 50%;
+  height: 30px;
+  background: green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: flex-start;
+  float: left;
+}
+
+.instock_text{
+  float: left;
+}
+
+
+.right_col{
+  width: 50%;
+    height: 20px;
+    background: rgb(222, 2, 225);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+    float: left;
+}
+
+  .size_text{
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    margin-left: 10px;
+    align-items: auto;
+    float: left;
+  }
+
+  .cap_text{
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    margin-left: 20px;
+    float: left;
+    align-items: auto;
+  }
