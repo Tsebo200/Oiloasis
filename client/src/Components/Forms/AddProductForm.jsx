@@ -9,7 +9,7 @@ function AddProductForm() {
                   <p className={styles.add_product_text}>Add A Oil Product</p>
               </div>
               <div className={styles.form_input_container}>
-          
+                
               <input className={styles.product_name} placeholder='Product Name*'></input>
               <input className={styles.product_price} placeholder='Product Price*'></input>
               <input className={styles.product_desc} placeholder='Product Description*'></input>

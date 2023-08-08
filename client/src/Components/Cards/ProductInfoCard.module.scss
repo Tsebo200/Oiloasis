@@ -12,7 +12,6 @@
   .row_one{
     width: 100%;
     height: 45px;
-    background: blue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,7 +62,9 @@
   }
   
   .row_two{
-    background: red;
+    width: 100%;
+    height: 12%;
+    float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,40 +72,168 @@
     align-content: space-between;
     align-items: flex-start;
   }
-  
-  .left_col{
-    width: 50%;
-    height: 30px;
-    background: green;
 
+.left_col{
+    width: 50%;
+    height: 100%;
     float: left;
-  }
-  
-  .instock_text{
+}
+
+.row_three{
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.size_text{
+    font-size: 13px;
+    margin-left: 15px;
+    color: $text_accent;
+    font-family: Inter;
+    font-weight: 400;
+    float: left;
+}
+
+.cap_text{
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 400;
+    color: $text_accent;
+    float: left;
+}
+
+.left_col_two{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.instock_text{
+    font-size: 13px;
+    font-family: Inter;
+    color: $text_accent;
+    font-weight: 400;
+    margin-left: 15px;
+    float: left;
+}
+
+.price_text{
+    font-size: 13px;
+    font-family: Inter;
+    color: $text_accent;
+    font-weight: 400;
+    float: left;
+}
+
+.row_breaker{
+    width: 100%;
+    height: 4%;
+    // background: whitesmoke;
+    float: left;
+}
+
+.row_four{
+    width: 100%;
+    height: 20%;
+    // background: blue;
+    float: left;
+}
+
+.desc_text{
+    font-size: 13px;
+    font-family: Inter;
+    color: $text_accent;
+    font-weight: 400;
+    margin-left: 15px;
+    float: left;
+}
+
+.disclaim_text{
+    font-size: 13px;
+    font-family: Inter;
+    color: $text_accent;
+    font-weight: 400;
+    margin-left: 15px;
+    float: left;
+}
+
+// width = 240 + 15 = 255px
+.view_btn{
+    width: 105px;
+    height: 100%;
+    border-radius: 15px;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 12px;
+    background: $accent_one;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    border-style: none;
+    color: $light_green;
+    float: left;
+}
+
+.view_btn:hover{
+    border: 1px solid $accent_three;
+    background: none;
+    cursor: pointer; 
+}
+
+.view_text{
+    font-size: 12px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.edit_btn{
+    width: 105px;
+    height: 100%;
+    border-radius: 15px;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 12px;
+    background: $accent_one;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    border-style: none;
+    color: $light_green;
+    float: left;
+}
+
+.edit_btn:hover{
+    border: 1px solid $accent_three;
+    background: none;
+    cursor: pointer;
+}
+
+
+.row_six{
+    width: 100%;
+    height: 25px;
     margin-top: 20px;
     float: left;
+}
+
+.new_product_btn{
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-style: none;
+    text-align: center;
+    background: $accent_one;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 18px;
+    text-transform: uppercase;
+    
   }
   
-  
-  .right_col{
-    width: 40%;
-    height: 20px;
-    background: rgb(222, 2, 225);
-    float: left;
-  }
-  
-    .size_text{
-      font-size: 15px;
-      font-family: Inter;
-      font-weight: 400;
-      margin-left: 10px;
-      align-items: auto;
-      float: left;
-    }
-  
-    .cap_text{
-      font-size: 15px;
-      font-family: Inter;
-      font-weight: 400;
-      margin-left: 20px;
+  .new_product_btn:hover{
+      border: 1px solid $accent_three;
+      background: none;
+      cursor: pointer;
     }
