@@ -1,0 +1,110 @@
+@import '../../Scss/Style.scss';
+
+
+.detail_one{
+    width: 30%;
+    height: 45%;
+    background: $dark_green;
+    border-radius: 10px;
+    float: left;
+  }
+  
+  .row_one{
+    width: 100%;
+    height: 45px;
+    background: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .spell_icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 360px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background: $darkest_green;
+    background-image: url('../../Assets/DropperGoldCap.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    align-self: center;
+  }
+  
+  .spell_name{
+    font-family: Inter;
+    font-weight: 600;
+    color: $accent_three;
+    align-self: center;
+    margin-left: 10px;
+  }
+  
+  .delete_btn{
+    width: 15px;
+    height: 23px;
+    align-self: center;
+    margin-left: 15px;
+    background-image: url('../../Assets/TashBin.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .delete_btn:hover{
+    width: 15px;
+    height: 23px;
+    align-self: center;
+    margin-left: 15px;
+    background-image: url('../../Assets/TashBinHovered.svg');
+  }
+  
+  .row_two{
+    background: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .left_col{
+    width: 50%;
+    height: 30px;
+    background: green;
+
+    float: left;
+  }
+  
+  .instock_text{
+    margin-top: 20px;
+    float: left;
+  }
+  
+  
+  .right_col{
+    width: 40%;
+    height: 20px;
+    background: rgb(222, 2, 225);
+    float: left;
+  }
+  
+    .size_text{
+      font-size: 15px;
+      font-family: Inter;
+      font-weight: 400;
+      margin-left: 10px;
+      align-items: auto;
+      float: left;
+    }
+  
+    .cap_text{
+      font-size: 15px;
+      font-family: Inter;
+      font-weight: 400;
+      margin-left: 20px;
+    }
