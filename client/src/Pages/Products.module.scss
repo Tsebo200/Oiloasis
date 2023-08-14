@@ -8,15 +8,29 @@
 
 .left_side{
     width: 20vw;
-    height: 90vh;
+    height: 100%;
     background: red;
     // margin-left: -200px;
     float: left;
 }
 
+.filter_section{
+    width: 100%;
+    height: 8vh;
+    padding-top: 20px;
+    background: rgb(119, 119, 225);
+}
+
+.filter_box{
+    width: 100%;
+    height: 42vh;
+    background: green;
+    float: left;
+}
+
 .bag_box{
     width: 100%;
-    height: 37vh;
+    height: 38vh;
     background: blue;
     float: left;
 }
@@ -28,13 +42,6 @@
     float: right;
 }
 
-.filter_section{
-    width: 100%;
-    height: 50vh;
-    padding-top: 20px;
-    // background: rgb(119, 119, 225);
-}
-
 .filter_text{
     font-size: 20px;
     font-family: Inter;
@@ -44,9 +51,3 @@
     float: left;
 }
 
-.filter_box{
-    width: 100%;
-    height: 42vh;
-    background: green;
-    float: left;
-}

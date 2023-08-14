@@ -25,6 +25,12 @@ function Dashboard() {
                   <div className={styles.arrow}></div>
               </div>
           </div>
+
+          <div className={styles.slide_navigator}>
+            <div className={styles.left_arrow}></div>
+            {/* <hr/> */}
+            <div className={styles.right_arrow}></div>
+          </div>
       </div>
     </div>
     </>

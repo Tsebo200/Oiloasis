@@ -123,3 +123,49 @@
             background-image: url('../Assets/arrow_hover.svg');
         }
 }
+
+.slide_navigator{
+    width: 7%;
+    height: 10%;
+    // margin-top: 125px;
+    margin-top: -50px;
+    margin-right: 50px;
+    // background: red;
+    float: right;
+}
+
+.left_arrow{
+    width: 35px;
+    height: 35px;
+    // background: blue;
+    background-image: url('../Assets/Left.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.left_arrow:hover{
+    background-image: url('../Assets/LeftHover.svg');  
+}
+
+.right_arrow{
+    width: 35px;
+    height: 35px;
+    // background: blue;
+    margin-top: -15px;
+    background-image: url('../Assets/Right.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.right_arrow:hover{
+    background-image: url('../Assets/RightHover.svg');
+}
+
+hr{
+    width: 70%;
+    transform: rotate(90deg);
+    margin-top: -3px;
+}

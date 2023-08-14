@@ -1,0 +1,79 @@
+@import "../../Scss/Style.scss";
+
+.card_container{
+    width: 90%;
+    height: 85%;
+    margin-top: 5.5%;
+    margin-left: 5%;
+    // background: red;
+    // opacity: 30%;
+    float: left;
+}
+
+.row_one{
+    width: 100%;
+    height: 45%;
+    // background: green;
+    float: left;
+}
+
+.card_one{
+    width: 30%;
+    height: 100%;
+    background: $dark_green;
+    float: left;
+}
+
+.img_box{
+    width: 55%;
+    height: 60%;
+    margin-top: 5%;
+    margin-left: 21%; 
+    background: white;
+    float: left;
+}
+
+.hor_break{
+    width: 100%;
+    height: 10%;
+    // background: black;
+    float: left;
+}
+
+.product_name{
+    width: 200px;
+    height: 20px;
+    margin-left: 35px;
+    margin-top: 10px;
+    // background: white;
+    float: left;
+}
+
+.product_text{
+    font-size: 13px;
+    text-align: center;
+    color: $text_accent_one;
+    width: 200px;
+    height: 50px;
+    // background: white;
+}
+
+.price_box{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    color: $text_accent_one;
+    // background: white;
+    float: left;
+}
+
+.price_text{
+
+}
+
+.vert_break{
+    width: 3vw;
+    height: 100%;
+    // background:  black;
+    float: left;
+}

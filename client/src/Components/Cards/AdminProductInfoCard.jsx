@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../Cards/ProductInfoCard.module.scss'
+import styles from '../Cards/AdminProductInfoCard.module.scss'
 import { useState } from 'react';
 
 
