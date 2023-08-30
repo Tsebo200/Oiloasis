@@ -1,0 +1,95 @@
+@import '../Scss/Style.scss';
+
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+.main_container{
+    width: 100%;
+    height: 90vh;
+    // background: red;
+}
+
+.left{
+    width: 50%;
+    height: 80vh;
+    margin-top: 5vh;
+    border-radius: 12px;
+    background: $dark_green;
+    float: left;
+}
+
+.inner_container{
+    width: 90%;
+    height: 70vh;
+    margin-left: 5%;
+    margin-top: 5vh;
+    background: grey;
+    float: left;
+}
+
+.inner_container h1{
+    color: $accent_two;
+    font-weight: 600;
+    font-size: 20px;
+    float: left;
+}
+
+td {
+    border: 1px solid;
+    float: left;
+  }
+
+.heading_block{
+    width: 100%;
+    height: 20px;
+    background: blue;
+    float: left;
+}
+
+.product_block{
+    width: 200px;
+    height: 100%;
+    background: green;
+    float: left;
+}
+
+.product_text{
+    font-size: 12px;
+    margin-left: 10px;
+    float: left;
+}
+
+.size_text{
+    font-size: 12px;
+    margin-left: 50px;
+    float: left;
+}
+
+.quantity_block{
+    width: 200px;
+    height: 100%;
+    background: blue;
+    float: left;
+}
+
+.quantity_text{
+    font-size: 12px;
+    margin-left: 100px;
+    float: left;  
+}
+
+.price_block{
+    width: 174px;
+    height: 100%;
+    background: green;
+    float: left;
+}
+
+.price_text{
+    font-size: 12px;
+    margin-left: 50px;
+    float: left; 
+}

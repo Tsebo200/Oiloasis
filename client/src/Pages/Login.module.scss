@@ -1,0 +1,187 @@
+@import '../Scss/Style.scss';
+
+.main_container{
+    width: 100vw;
+    height: 100vh;
+    background: $dark_green;
+    float: left;
+}
+
+.login_container{
+    width: 70%;
+    height: 80%;
+    margin-top: 6%;
+    margin-left: 15%;
+    border-radius: 20px;
+    background: grey;
+    float: left;
+}
+
+.spacer{
+    width: 70px;
+    background: grey;
+    float: left;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    background: $accent_three;
+    float: left;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-image: url('../Assets/Logo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.logo:hover{
+    background-image: url('../Assets/LogoHover.png');
+}
+
+.head_container{
+    width: 100%;
+    height: 60px;
+    background: $accent_three;
+    float: left;
+}
+
+.login_heading{
+    font-family: Inter;
+    font-weight: 300;
+    margin-left: 50px;
+    float: left;
+}
+
+.intro_box{
+    width: 100%;
+    height: 20px;
+    background: $accent_three;
+    float: left;
+}
+
+.intro_login{
+    font-family: Inter;
+    margin-left: 50px;
+    float: left;
+}
+
+.username_label{
+    font-family: Inter;
+    color: $accent_one;
+    font-weight: 400;
+}
+
+.username_container{
+    width: 90px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+}
+
+.username_input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+
+    border: 1px solid grey;
+    // background-color: #f7f7f7;
+    border-radius: 9px;
+    padding-left: 4%;
+}
+
+.password_input{
+    font-family: Inter;
+    font-weight: 400; 
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+
+    border: 1px solid grey;
+    // background-color: #f7f7f7;
+    border-radius: 9px;
+    padding-left: 4%;
+}
+
+.password_container{
+    width: 90px;
+    height: 50px;
+    margin-top: 150px;
+    // background: blue;
+    margin-left: -90px;
+    float: left;
+}
+
+.password_label{
+    font-family: Inter;
+    color: $accent_one;
+    font-weight: 400;   
+}
+
+.form_container{
+    width: 100%;
+    height: 100px;
+    margin-top: -10px;
+    float: left;
+}
+
+.signIn_btn_container{
+    width: 270px;
+    height: 39px;
+    margin-left: -95px;
+    margin-top: 280px;
+    border-radius: 9px;
+    background: #2B4447;
+    float: left;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+  }
+
+  .signIn_btn_container:hover{
+    background-color: #EBA182;
+    cursor: pointer;
+  }
+
+  .signIn_text{
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 300;
+    // margin-left: 130px;
+    // margin-top: 11px;
+    color: white;
+    flex: 0 1 auto;
+    align-self: center;
+    float: left; 
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  
+
+.right{
+    width: 50%;
+    height: 100%;
+    background-image: url('../Assets/SignImage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+

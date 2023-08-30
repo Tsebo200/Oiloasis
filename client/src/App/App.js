@@ -5,7 +5,7 @@ import Dashboard from '../Pages/Dashboard';
 import Products from '../Pages/Products';
 import Admin from '../Pages/Admin';
 import Checkout from '../Pages/Checkout';
-
+import Login from '../Pages/Login'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/allproducts" element={<Products/>}/>
         <Route path='/checkout' element={<Checkout/>}/>
         <Route path='/admin' element={<Admin/>}/>
+        <Route path='/login' element={<Login/>}></Route>
       </Routes>
     </div>
   );

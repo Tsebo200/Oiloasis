@@ -23,7 +23,14 @@
 .heading_cont{
     width: 100%;
     height: 40px;
-    // background: blue;
+    background: blue;
+}
+
+.upload_section{
+    width: 100%;
+    height: 100%;
+    background: red;
+    float: left;
 }
 
 ::placeholder{
