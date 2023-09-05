@@ -8,10 +8,10 @@ const oilSchema = mongoose.Schema({
     size: { type: String,required: true},
     quantity: { type: Number,required: true},
     inStock: { 
-        Black: { type: Number,required: true},
-        White: { type: Number,required: true},
-        Silver: { type: Number,required: true},
-        Gold: { type: Number,required: true},
+        black: { type: Number,required: true},
+        white: { type: Number,required: true},
+        silver: { type: Number,required: true},
+        gold: { type: Number,required: true},
     },
     date: { type: Date, default: Date.now}
 });

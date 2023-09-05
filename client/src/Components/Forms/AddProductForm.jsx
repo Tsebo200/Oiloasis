@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../Forms/AddProductForm.module.scss'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -8,41 +8,54 @@ function AddProductForm() {
 
   const navigate = useNavigate();
 
-  const [ name, setName] = useState();
-  const [ size, setSize] = useState();
-  const [ capColor, setCapColor] = useState();
-  const [ instock, setInstock] = useState();
-  const [ quantity, setQuantity] = useState();
-  const [ price, setPrice] = useState();
-  const [ disclaimer, setDisclaimer] = useState();
-  const [ description, setDescription] = useState();
+  const [ productName, setProductName ] = useState('');
+  const [ size, setSize] = useState('');
+  // const [ capColor, setCapColor] = useState();
+  const [ instock, setInstock] = useState('');
+  const [ quantity, setQuantity] = useState('');
+  const [ productPrice, setProductPrice] = useState('');
+  const [ disclaimer, setDisclaimer] = useState('');
+  const [ description, setDescription] = useState('');
 
-  const [ black, setBlack] = useState();
-  const [ white, setWhite] = useState();
-  const [ gold, setGold] = useState();
-  const [ silver, setSilver] = useState();
+  const [ black, setBlack] = useState('');
+  const [ white, setWhite] = useState('');
+  const [ gold, setGold] = useState('');
+  const [ silver, setSilver] = useState('');
+
+  const [ image, setImage ] = useState();
 
   // capColor = black + white + gold + silver;
   
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+      e.preventDefault();
         const payload = {
-            name: name,
-            size: size,
-            capColor: capColor,
-            instock: instock,
-            quantity: quantity,
-            price: price,
+            productName: productName,
+            productPrice: productPrice,
             description: description,
-            disclaimer: disclaimer
+            disclaimer: disclaimer,
+            size: size,
+            quantity: quantity,
+            instock: {
+              black: black,
+              white: white,
+              silver: silver,
+              gold: gold
+              }
+            // capColor: capColor
         }
-        
-        try {
-          const res = axios.post("http://localhost:5002/", payload);
-          console.log("Oil Data added:", res.data)
-        } catch (error) {
-          console.log("error occurred when submitting:", error);
+        console.log(payload)
+        axios.post("http://localhost:5002/api/oil", payload)
+        .then(res => console.log(res))
+        .catch(err => console.log("error occurred when submitting:", err))
         }
-      };
+
+      //   try {
+      //     const res = axios.post("http://localhost:5002/", payload);
+      //     console.log("Oil Data added:", res.data)
+      //   } catch (error) {
+      //     console.log("error occurred when submitting:", error);
+      //   }
+      // };
 
       const [file, setFile]  = useState();
 
@@ -54,6 +67,13 @@ function AddProductForm() {
         .then(res => console.log(res))
         .catch(err => console.log(err))
       }
+
+
+  useEffect(() => {
+    axios.get('http://localhost:5002/getImage')
+    .then(res => setImage(res.data[6].image))
+    .catch(err => console.log(err))
+}, []);
 
   return (
    <>
@@ -67,8 +87,8 @@ function AddProductForm() {
               </div>
               <form className={styles.form_input_container} onSubmit={handleSubmit}>
                 
-              <input className={styles.product_name} placeholder='Product Name*' value={name} onChange={(e) => setName(e.target.value)}></input>
-              <input className={styles.product_price} placeholder='Product Price*'  value={price} onChange={(e) => setPrice(e.target.value)}></input>
+              <input className={styles.product_name} placeholder='Product Name*' value={productName} onChange={(e) => setProductName(e.target.value)}></input>
+              <input className={styles.product_price} placeholder='Product Price*'  value={productPrice} onChange={(e) => setProductPrice(e.target.value)}></input>
               <input className={styles.product_desc} placeholder='Product Description*' value={description} onChange={(e) => setDescription(e.target.value)}></input>
               <input className={styles.product_disclaim} placeholder='Product Disclaimer*' value={disclaimer} onChange={(e) => setDisclaimer(e.target.value)}></input>
               <select className={styles.product_size} placeholder='Select Size' value={size} onChange={(e) => setSize(e.target.value)}>

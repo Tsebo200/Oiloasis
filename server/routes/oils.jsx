@@ -7,20 +7,20 @@ const router = express();
 
 //Read all
 router.get('/api/oils', async(req, res) =>{
-    const findkick = await OilsSchema.find()
-    res.json(findkick)
+    const findoil = await OilsSchema.find()
+    res.json(findoil)
 })
 
 //Read one
 router.get('/api/oil/:id', async (req, res) => {
-    const findkick = await OilsSchema.findById(req.params.id)
-    res.json(findkick)
+    const findoil = await OilsSchema.findById(req.params.id)
+    res.json(findoil)
 })
 
 //Create
 router.post('/api/oil', async (req,res) => {
-    const kick = new OilsSchema({...req.body})
-    await kick.save()
+    const oils = new OilsSchema({...req.body})
+    await oils.save()
         .then(response => res.json(response))
         .catch(error => res.status(500).json(error))
 })

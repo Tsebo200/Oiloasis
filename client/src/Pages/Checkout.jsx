@@ -24,7 +24,9 @@ function Checkout() {
           <div className={styles.price_block}>
           <p className={styles.price_text}>Total Price</p>
           </div>
+  
           </div>
+          <hr className={styles.checkline}/>
         
         </div>
 

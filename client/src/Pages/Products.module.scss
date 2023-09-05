@@ -9,7 +9,7 @@
 .left_side{
     width: 20vw;
     height: 100%;
-    background: red;
+    background: $dark_green;
     // margin-left: -200px;
     float: left;
 }
@@ -18,27 +18,27 @@
     width: 100%;
     height: 8vh;
     padding-top: 20px;
-    background: rgb(119, 119, 225);
+    // background: rgb(119, 119, 225);
 }
 
 .filter_box{
     width: 100%;
     height: 42vh;
-    background: green;
+    // background: green;
     float: left;
 }
 
 .bag_box{
     width: 100%;
     height: 38vh;
-    background: blue;
+    // background: blue;
     float: left;
 }
 
 .right_side{
     width: 70vw;
     height: 90vh;
-    background: #ECE8DF;
+    background: $accent_three;
     float: right;
 }
 
@@ -47,7 +47,13 @@
     font-family: Inter;
     padding-left: 50px;;
     font-weight: 400;
-    color: #E6B27E;
+    color: $text_accent;
     float: left;
 }
 
+.recent_text{
+    color: $accent_three;
+}
+.popular_text{
+    color: $accent_three;   
+}
