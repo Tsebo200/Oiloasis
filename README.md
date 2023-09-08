@@ -3,7 +3,7 @@
 <!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Tsebo200/ChiroHe)
+![GitHub repo size](https://img.shields.io/github/repo-size/Tsebo200/Oiloasis)
 ![GitHub watchers](https://img.shields.io/github/watchers/Tsebo200/Oiloasis)
 ![GitHub language count](https://img.shields.io/github/languages/count/Tsebo200/Oiloasis)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Tsebo200/Oiloasis)
