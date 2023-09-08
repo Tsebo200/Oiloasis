@@ -157,7 +157,7 @@ The style I was going for was a fresh and modern look of websites that would be 
 ### Wireframes
 This is my first phase
 <img src="src/Assets/Dashboard.png" align="center"><br>
-<img src="/client/src/Assets/Home.png" align="center>
+<img src="client/src/Assets/Home.png" align="center>
 
 <img src="src/Assets/EditPatients.png" align="center"><br>
 
