@@ -76,7 +76,7 @@ Creating an E-commerce website for meditative oil aids, this had to be created w
 
 * [Mongo] (https://www.mongodb.com/)
 * [Express] (https://expressjs.com/)
-* [React](https://reactjs.org/)
+* [React] (https://reactjs.org/)
 * [Node] (https://nodejs.org/en)
 
 
@@ -217,15 +217,16 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-<!-- ![image6](https://github.com/Tsebo200/Oiloasis/blob/main/src/Assets/MockOne.png)
+ ![image6](https://github.com/Tsebo200/Oiloasis/blob/main/src/Assets/MockOne.png)
 
 <br>
 
-![image7](https://github.com/Tsebo200/Oiloasis/blob/main/src/Assets/MockTwo.png)
+
+  ![image7](../Oiloasis/client/src/Assets/MockupOne.png)
 
 <br>
 
-![image8](https://github.com/Tsebo200/Oiloasis/blob/main/src/Assets/MockThree.png)
+<!--![image8](https://github.com/Tsebo200/Oiloasis/blob/main/src/Assets/MockThree.png)
 
 <br>
 
