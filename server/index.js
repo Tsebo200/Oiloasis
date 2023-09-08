@@ -8,7 +8,7 @@ const multer = require('multer')
 const path = require('path')
 const { error } = require('console')
 const UserModel = require('./models/Users')
-app.use(express.static('public'))
+// app.use(express.static('public'))
 
 require('dotenv/config')
 

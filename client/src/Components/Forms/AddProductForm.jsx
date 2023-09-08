@@ -71,7 +71,7 @@ function AddProductForm() {
 
   useEffect(() => {
     axios.get('http://localhost:5002/getImage')
-    .then(res => setImage(res.data[6].image))
+    .then(res => setImage(res.data[0].image))
     .catch(err => console.log(err))
 }, []);
 

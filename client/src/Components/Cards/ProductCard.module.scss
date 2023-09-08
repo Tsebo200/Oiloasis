@@ -19,7 +19,8 @@
 
 .card_one{
     width: 30%;
-    height: 100%;
+    height: 300px;
+    margin-top: -40px;
     background: $dark_green;
     float: left;
 }
@@ -30,6 +31,10 @@
     margin-top: 5%;
     margin-left: 21%; 
     background: white;
+    background-image: url('../../Assets/DropperBlackCap.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     float: left;
 }
 

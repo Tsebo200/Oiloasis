@@ -26,11 +26,12 @@ function Login() {
                         <p className={styles.password_label}>Password</p>
                         <input type="password" className={styles.password_input} placeholder='Enter Password'></input>
                     </div>
+                    <a href="checkout"> 
                     <div className={styles.signIn_btn_container}>
 
                     <p className={styles.signIn_text}> Sign In</p>
-
                     </div>
+                    </a>
                 </div>
             </div>
             <div className={styles.right}>

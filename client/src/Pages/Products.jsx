@@ -41,7 +41,9 @@ function Products() {
 
             </div>
             <div className={styles.right_side}>
+              <a href='product'>
             <ProductCard/>
+            </a>
             </div>
       </div>
     </>

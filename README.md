@@ -69,7 +69,7 @@
 
 ### Project Description
 
-My Project is a budget calculator, that calculates breadwinners earnings. The breadwinner can manage their taxes, monthly expenses as well as their savings. 
+Creating an E-commerce website for meditative oil aids, this had to be created with the MERN Stack. 
 
 ### Built With
 
@@ -181,22 +181,21 @@ In my frontend I implemented a Google Font called Inter, a box shadow on differe
 <!-- stipulate all of the functionality you included in the project -->
 <!-- This is your time to shine, explain the technical nuances of your project, how did you achieve the final outcome!-->
 
-* Utilised React and Material UI for front-end
-* Utilised PHP for back-end (communicates with MYSQL)
+* Utilised React and SCSS for front-end
+* Utilised Express communicate to database for back-end
+* Utilised Node for React Packages 
 * Implemented Routing with `React-Router v6`.
-* Implemented MYSQL to communicate with the front-end (React - register& login Pages) and back-end (PHP)
-* Utilised JSS for editing MUI Elements and Scss for styling other components
+* Utilised MongoDB as Database (NoSQL)
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
-* I struggled with understanding Mui as it took time to try implement
+* I struggled with create/post method and image upload due to Multer Middleware
 * I mostly enjoyed making UX decisions and implementing it into the project.
-* Learning how to use Sql to edit a database was also interesting
+* Learning to send data to MongoDB
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-* It took me a while to understand how PHP communicates to React and MYSQL, thus leading my functions to being incomplete.
-* I also had many bugs in my project not knowing how to fix them.
+* I kept getting a 500 internal error due to the multer middleware
 
 
 #### Above And Beyond
@@ -210,7 +209,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* I will learn more about how React and PHP communicate to each other in order to make more complex functions.
+* I would love to learn how to handle with the process of online transactions 
 
 
 <!-- MOCKUPS -->
@@ -243,7 +242,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 To see a run through of the application, click below:
 
-[View Demonstration](https://drive.google.com/file/d/1d61sns_ou6x7PYqPwDxf_UcDtldtHTUC/view?usp=sharing)
+[View Demonstration](https://drive.google.com/file/d/1y57Nib7L1EYwqYwTdrxBNcr3E6kLrqJh/view?usp=sharing)
 
 
 See the [open issues](https://github.com/Tsebo200/Oiloasis/issues) for a list of proposed features (and known issues).
