@@ -159,7 +159,7 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 The style I was going for was a fresh and modern look of websites that would be found on dribble. When I was deciding the type of images I will be utilising, I went for jpegs as that is commonly found on websites, I feel I needed more experience with handling Jpegs as I am used to utilising Svgs and Pngs.
-![image5](https://github.com/Tsebo200/Oiloasis/blob/main/src/Assets/leftImage.png)<br><br>
+<!-- ![image5](https://github.com/Tsebo200/Oiloasis/blob/main/src/Assets/leftImage.png)<br><br> -->
 
 ### Wireframes
 This is my first phase
