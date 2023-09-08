@@ -26,7 +26,6 @@ html{
     height: 70vh;
     margin-left: 5%;
     margin-top: 5vh;
-    background: grey;
     float: left;
 }
 
@@ -36,11 +35,6 @@ html{
     font-size: 20px;
     float: left;
 }
-
-td {
-    border: 1px solid;
-    float: left;
-  }
 
 .heading_block{
     width: 100%;
@@ -59,12 +53,14 @@ td {
 .product_text{
     font-size: 12px;
     margin-left: 10px;
+    color: $accent_three;
     float: left;
 }
 
 .size_text{
     font-size: 12px;
     margin-left: 150px;
+    color: $accent_three;
     float: left;
 }
 
@@ -77,6 +73,7 @@ td {
 
 .quantity_text{
     font-size: 12px;
+    color: $accent_three;
     margin-left: 110px;
     float: left;  
 }
@@ -90,6 +87,7 @@ td {
 
 .price_text{
     font-size: 12px;
+    color: $accent_three;
     margin-left: 50px;
     float: left; 
 }
@@ -114,7 +112,7 @@ td {
     height: 80%;
     margin-top: 10px;
     margin-left: 10px;
-    background: blue;
+    background: $accent_three;
     float: left;
 }
 
@@ -122,19 +120,20 @@ td {
     margin-top: 25px;
     margin-left: 10px;
     font-size: 12px;
+    color: $accent_two;
     float: left;
 }
 
 .product_block{
     width: 15%;
     height: 50%;
-    background: white;
     float: left;
 }
 
 .username{
     font-size: 12px;
-    margin-left: 5px;
+    margin-left: 10px;
+    color: $accent_three;
     float: left;
 }
 
@@ -159,7 +158,7 @@ td {
     height: 19px;
     margin-top: 45px;
     margin-left: 70px;
-    background: #2B4447;
+    background: $accent_one;
     border-radius: 2px;
     float: left;
 }
@@ -168,11 +167,14 @@ td {
 .checkout_minus_block{
   width: 18px;
   height: 19px;
-  background: #D9D9D9;
+  background: $accent_three;
   border-radius: 2px 0px 0px 2px;
   float: left;
 }
 
+.checkout_minus_block:hover{
+    background: $light_green;
+}
 
 .checkout_minus_icon{
     width: 14px;
@@ -198,9 +200,13 @@ td {
     width: 18px;
     height: 19px;
     margin-left: 12.9px;
-    background: #D9D9D9;
+    background: $accent_three;
     border-radius: 0px 2px 2px 0px;
     float: left;
+  }
+
+  .checkout_plus_block:hover{
+    background: $light_green;
   }
   
   .checkout_plus_icon{
@@ -214,9 +220,33 @@ td {
 
   .row_one_total_price{
     margin-top: 40px;
+    color: $accent_three;
 }
 
+.row_two{
+    width: 100%;
+    height: 20%;
+    float: left;
+}
 
+.row_three{
+    width: 100%;
+    height: 20%;
+    float: left;
+}
+
+.row_four{
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.continue_shopping_text{
+    margin-top: 20px;
+    margin-left: -70px;
+    color: $accent_three;
+    float: left;
+}
 
 
 

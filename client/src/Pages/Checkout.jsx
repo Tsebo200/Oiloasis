@@ -2,6 +2,7 @@ import React from 'react';
 import MainNavBar from '../Components/NavBar/MainNavBar';
 import styles from '../Pages/Checkout.module.scss';
 import Logo from '../Components/Logo/Logo'
+import { Link } from 'react-router-dom';
 
 function Checkout() {
   return (
@@ -55,8 +56,17 @@ function Checkout() {
 
               <p className={styles.row_one_total_price}>R 120</p>
                 <div className={styles.remove_btn}></div>
-
             </div>
+
+
+            <div className={styles.row_two}></div>
+            <div className={styles.row_three}></div>
+            <div className={styles.row_four}></div>
+
+
+           <b>
+            <div className={styles.continue_shopping_text}>
+              <Link to="/allproducts">Continue Shopping</Link></div></b> 
 
         </div>
 
