@@ -156,13 +156,14 @@ The style I was going for was a fresh and modern look of websites that would be 
 
 ### Wireframes
 This is my first phase
-<img src="src/Assets/Dashboard.png" align="center"><br>
-<img src="client/src/Assets/Admin Page.png" align="center">
-
-<img src="src/Assets/EditPatients.png" align="center"><br>
+<img src="client/src/Assets/Home.png" align="center"><br>
+<img src="client/src/Assets/Admin Page.png" align="center"><br>
+<img src="client/src/Assets/All Products.png" align="center"><br>
+<img src="client/src/Assets/Checkout Page.png" align="center"><br>
+<img src="client/src/Assets/Individual Product.png" align="center"><br>
+<img src="client/src/Assets/Login page.png" align="center"><br>
 
 ### Custom UI
-I utulised Material UI
 <!-- <img src="src/Assets/DashboardBtnImage.png" align="center">
 <br>
 
@@ -223,7 +224,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 <br>
 
 
-  ![image7](../Oiloasis/client/src/Assets/MockupOne.png)
+  ![image7](/client/src/Assets/MockupOne.png)
 
 <br>
 
@@ -257,7 +258,7 @@ See the [open issues](https://github.com/Tsebo200/Oiloasis/issues) for a list of
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.\
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- LICENSE -->
 ## Contact
