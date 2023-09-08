@@ -156,12 +156,12 @@ The style I was going for was a fresh and modern look of websites that would be 
 
 ### Wireframes
 This is my first phase
-<img src="client/src/Assets/Home.png" align="center"><br>
-<img src="client/src/Assets/Admin Page.png" align="center"><br>
-<img src="client/src/Assets/All Products.png" align="center"><br>
-<img src="client/src/Assets/Checkout Page.png" align="center"><br>
-<img src="client/src/Assets/Individual Product.png" align="center"><br>
-<img src="client/src/Assets/Login page.png" align="center"><br>
+<img src="client/src/Assets/Home.png" align="center"><br><br>
+<img src="client/src/Assets/Admin Page.png" align="center"><br><br>
+<img src="client/src/Assets/All Products.png" align="center"><br><br>
+<img src="client/src/Assets/Checkout Page.png" align="center"><br><br>
+<img src="client/src/Assets/Individual Product.png" align="center"><br><br>
+<img src="client/src/Assets/Login page.png" align="center"><br><br>
 
 ### Custom UI
 <!-- <img src="src/Assets/DashboardBtnImage.png" align="center">
@@ -219,7 +219,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
- ![image6](https://github.com/Tsebo200/Oiloasis/blob/main/src/Assets/MockOne.png)
+ ![image6](/client/src/Assets/MockupTwo.png)
 
 <br>
 
