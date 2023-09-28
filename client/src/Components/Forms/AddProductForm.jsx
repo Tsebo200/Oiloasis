@@ -8,6 +8,9 @@ function AddProductForm() {
 
   const navigate = useNavigate();
 
+  const [ product, setProduct ] = useState();  
+  const [updateProducts, setUpdateProducts] = useState(false);
+
   const [ productName, setProductName ] = useState('');
   const [ size, setSize] = useState('');
   // const [ capColor, setCapColor] = useState();
@@ -17,12 +20,16 @@ function AddProductForm() {
   const [ disclaimer, setDisclaimer] = useState('');
   const [ description, setDescription] = useState('');
 
+  const [ color, setColor ] = useState('');
   const [ black, setBlack] = useState('');
   const [ white, setWhite] = useState('');
   const [ gold, setGold] = useState('');
   const [ silver, setSilver] = useState('');
 
   const [ image, setImage ] = useState();
+
+
+
 
   // capColor = black + white + gold + silver;
   
@@ -35,12 +42,7 @@ function AddProductForm() {
             disclaimer: disclaimer,
             size: size,
             quantity: quantity,
-            instock: {
-              black: black,
-              white: white,
-              silver: silver,
-              gold: gold
-              }
+            color: document.getElementById("color").value
             // capColor: capColor
         }
         console.log(payload)
@@ -49,41 +51,34 @@ function AddProductForm() {
         .catch(err => console.log("error occurred when submitting:", err))
         }
 
-      //   try {
-      //     const res = axios.post("http://localhost:5002/", payload);
-      //     console.log("Oil Data added:", res.data)
-      //   } catch (error) {
-      //     console.log("error occurred when submitting:", error);
-      //   }
-      // };
 
-      const [file, setFile]  = useState();
+//       const [file, setFile]  = useState();
 
-      const handleUpload = (e) => {
-        console.log(file)
-        const formdata = new FormData()
-        formdata.append('file', file)
-        axios.post("http://localhost:5002/upload", formdata)
-        .then(res => console.log(res))
-        .catch(err => console.log(err))
-      }
+//       const handleUpload = (e) => {
+//         console.log(file)
+//         const formdata = new FormData()
+//         formdata.append('file', file)
+//         axios.post("http://localhost:5002/upload", formdata)
+//         .then(res => console.log(res))
+//         .catch(err => console.log(err))
+//       }
 
 
-  useEffect(() => {
-    axios.get('http://localhost:5002/getImage')
-    .then(res => setImage(res.data[0].image))
-    .catch(err => console.log(err))
-}, []);
+//   useEffect(() => {
+//     axios.get('http://localhost:5002/getImage')
+//     .then(res => setImage(res.data[0].image))
+//     .catch(err => console.log(err))
+// }, []);
 
   return (
    <>
     <div className={styles.add_form_container}>
               <div className={styles.heading_cont}>
                   <p className={styles.add_product_text}>Add A Oil Product</p>
-                  <div className={styles.upload_section}>
+                  {/* <div className={styles.upload_section}>
                     <input type="file" onChange={e => setFile(e.target.files[0])}/>
                     <button onClick={handleUpload}>upload</button>
-                  </div>
+                  </div> */}
               </div>
               <form className={styles.form_input_container} onSubmit={handleSubmit}>
                 
@@ -97,12 +92,15 @@ function AddProductForm() {
                   <option>10ml</option>
                   <option>15ml</option>
               </select>
+              <select id='color'>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="black">Silver</option>
+                <option value="black">Gold</option>
+                {/* <option value={setColor("white")}>Gold</option> */}
+              </select>
               <input className={styles.product_quantity} placeholder='Quantity*'  value={quantity} onChange={(e) => setQuantity(e.target.value)}></input>
-              <input className={styles.product_color_black} placeholder='In Stock: Black*'  value={black} onChange={(e) => setBlack(e.target.value)}></input>
-              <input className={styles.product_color_white} placeholder='In Stock: White*'  value={white} onChange={(e) => setWhite(e.target.value)}></input>
-              <input className={styles.product_color_silver} placeholder='In Stock: Silver*'  value={silver} onChange={(e) => setSilver(e.target.value)}></input>
-              <input className={styles.product_color_gold} placeholder='In Stock: Gold*'  value={gold} onChange={(e) => setGold(e.target.value)}></input>
-              <button type={"submit"} className={styles.new_product_btn}>ADD NEW PRODUCT</button>
+              <button type="submit" className={styles.new_product_btn}>ADD NEW PRODUCT</button>
               </form>
           </div>
 
