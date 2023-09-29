@@ -3,7 +3,7 @@
 
 .add_form_container{
     width: 90%;
-    height: 86vh;
+    height: 73vh;
     background: $dark_green;
     margin-top: 30px;
     margin-left: 25px;
@@ -132,7 +132,6 @@
     width: 45%;
     height: 55px;
     margin-top: 10px;
-    margin-left: 10%;
     background: $green;
     color: $light_green;
     font-size: 15px;
@@ -223,9 +222,10 @@
 }
 
 .new_product_btn{
-  width: 100%;
+  width: 45%;
   height: 55px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 30px;
   text-decoration: none;
   border-style: none;
   text-align: center;
@@ -245,3 +245,22 @@
     background: none;
     cursor: pointer;
   }
+
+.select_color{
+    width: 45%;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 35px;
+    background: $green;
+    color: $light_green;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.4px solid #000000;
+    float: left;
+}

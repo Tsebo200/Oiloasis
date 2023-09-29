@@ -20,7 +20,7 @@ function Admin() {
     <Logo/>
     <div className={styles.left_side}>
       <p className={styles.shop_heading}>The Oiloasis Shop: Oil Spells</p>
-
+{/* {product} */}
       <div className={styles.spells_container}>
       <AdminProductInfoCard/>
       </div>

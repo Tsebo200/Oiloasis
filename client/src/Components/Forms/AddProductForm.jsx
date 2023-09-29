@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from '../Forms/AddProductForm.module.scss'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import AdminProductCardInfoCard from '../Cards/AdminProductInfoCard';
 
 function AddProductForm() {
 
@@ -29,7 +30,22 @@ function AddProductForm() {
   const [ image, setImage ] = useState();
 
 
+  useEffect(() => {
 
+    axios.get('http://localhost:5002/api/oils')
+    .then((res)=>{
+      let productData = res.data
+      let renderProducts = productData.map((item) => <AdminProductCardInfoCard key={item._id} stock={item.instock} name={item.productName} price={item.productPrice} description={item.description}/>)
+      setProduct(renderProducts);
+      setUpdateProducts(false)
+      console.log(productData);
+
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+
+  }, [updateProducts])
 
   // capColor = black + white + gold + silver;
   
@@ -47,6 +63,7 @@ function AddProductForm() {
         }
         console.log(payload)
         axios.post("http://localhost:5002/api/oil", payload)
+        setUpdateProducts(true)
         .then(res => console.log(res))
         .catch(err => console.log("error occurred when submitting:", err))
         }
@@ -92,12 +109,13 @@ function AddProductForm() {
                   <option>10ml</option>
                   <option>15ml</option>
               </select>
-              <select id='color'>
+              <select className={styles.select_color} id='color'>
+              <option>Select Color</option>
                 <option value="white">White</option>
                 <option value="black">Black</option>
-                <option value="black">Silver</option>
-                <option value="black">Gold</option>
-                {/* <option value={setColor("white")}>Gold</option> */}
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+
               </select>
               <input className={styles.product_quantity} placeholder='Quantity*'  value={quantity} onChange={(e) => setQuantity(e.target.value)}></input>
               <button type="submit" className={styles.new_product_btn}>ADD NEW PRODUCT</button>
