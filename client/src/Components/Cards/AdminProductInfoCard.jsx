@@ -11,6 +11,7 @@ function ProductInfoCard(props) {
 
   return (
     <>
+    <div className={styles.hSpacer}></div>
          <div className={styles.detail_one}>
               <div className={styles.row_one}>
                   <div className={styles.spell_icon}></div>
@@ -37,13 +38,13 @@ function ProductInfoCard(props) {
                 </div>
                 <div className={styles.right_col}>
                     <p className={styles.price_text}>InStock:</p>
-                    <p className={styles.price_value}>{props.instock}</p>
+                    <p className={styles.price_value}>{props.quantity}</p>
                 </div>
               </div>
               <div className={styles.row_breaker}></div>
 
               <div className={styles.row_four}>
-                <p className={styles.desc_text}>Description:{props.description}</p>
+                <p className={styles.desc_text}>Description: {props.description}</p>
               </div>
               <div className={styles.row_five}>
                 <p className={styles.disclaim_text}>Disclaimer:{props.disclaimer}</p>
@@ -58,8 +59,8 @@ function ProductInfoCard(props) {
                 <p className={styles.edit_text}>Edit Product</p> */}
               </div>
 
-
         </div>
+        <div className={styles.vSpacer}></div>
     </>
   )
 }

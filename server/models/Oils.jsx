@@ -8,6 +8,7 @@ const oilSchema = mongoose.Schema({
     size: { type: String,required: false},
     quantity: { type: Number,required: false},
     color: {type: String, required: false},
+    // stock: { type: Number, required: false},
     date: { type: Date, default: Date.now}
 });
 

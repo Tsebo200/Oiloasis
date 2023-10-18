@@ -34,6 +34,16 @@ router.put('/api/oil/:id', async (req, res) =>{
         .catch(error => res.status(500).json(error))
 })
 
+// Update 2
+// router.patch('/api/oil/:id', async (req, res) =>{
+//     console.log(res.body);
+//     let stock = +req.body.varOne
+    
+//     const findProduct = await newProductModel.updateOne
+//     // {_id: req.params.id},
+//     // {}
+// })
+
 //Delete
 router.delete('/api/oil/:id', async (req, res) =>{
     await OilsSchema.findByIdAndDelete(req.params.id)
