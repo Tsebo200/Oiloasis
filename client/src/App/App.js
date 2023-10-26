@@ -7,6 +7,7 @@ import Admin from '../Pages/Admin';
 import Checkout from '../Pages/Checkout';
 import Login from '../Pages/Login'
 import Product from '../Pages/Product';
+// import ViewProductCard from '../Components/Cards/ViewProductCard';
 
 function App() {
   return (

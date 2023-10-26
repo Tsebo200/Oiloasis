@@ -11,6 +11,13 @@
     float: left;
   }
 
+  .modal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
   .cap_value{
     margin-left: 20px;
     margin-top: 13px;
