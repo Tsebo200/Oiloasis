@@ -83,7 +83,9 @@
     ::placeholder{
         color: $light_green; 
     }
-    
+.product_name::placeholder{
+    color: $light_green;
+}
     .product_name{
         width: 100%;
         height: 55px;
@@ -113,6 +115,19 @@
         padding-left: 20px;
         box-sizing: border-box;
         float: left;
+    }
+
+    .product_price, .product_desc::placeholder{
+        color: $light_green;
+    }
+    .product_price::placeholder{
+        color: $light_green;
+    }
+    .product_disclaim::placeholder{
+        color: $light_green;
+    }
+    .product_quantity::placeholder{
+        color: $light_green;  
     }
     
     .product_desc{

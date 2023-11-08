@@ -7,7 +7,10 @@ router.post('/api/addUser/', async (req, res) => {
     const user = new UserSchema({... req.body})
     await user.save()
         .then(response => res.json(response) )
-        .catch(error => res.status(500).json(error))
+        .catch(error => {
+            console.log(error);
+            res.status(500).json(error)
+        })
 })
 
 //Get all
@@ -18,20 +21,20 @@ router.get('/api/getUsers/', async (req, res) => {
 
 // Login User
 
-router.post('/api/loginUser', async (req, res) => {
-    const findUser = await UserSchema.findOne({
-        email: req.body.email,
-    })
-    console.log(findUser);
-    if (findUser != null) {
-        if (findUser.password === req.body.password) {
-            res.json("User Logged in")
-        } else {
-            res.json("Email and Password does not match")
-        }
-    } else {
-        res.json("user not found")
-    }
-})
+// router.post('/api/loginUser', async (req, res) => {
+//     const findUser = await UserSchema.findOne({
+//         email: req.body.email,
+//     })
+//     console.log(findUser);
+//     if (findUser != null) {
+//         if (findUser.password === req.body.password) {
+//             res.json("User Logged in")
+//         } else {
+//             res.json("Email and Password does not match")
+//         }
+//     } else {
+//         res.json("user not found")
+//     }
+// })
 
 module.exports = router;

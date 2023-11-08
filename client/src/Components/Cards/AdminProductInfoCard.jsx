@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import  Modal  from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button'
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function ProductInfoCard(props) {
@@ -12,6 +13,13 @@ function ProductInfoCard(props) {
     // const [items, setItems] = useState([]);
     // console.log(localStorage)
 
+const [productName, setProductName] = useState(props.productName);
+const [size, setSize] = useState(props.size);
+const [color, setColor] = useState(props.color);
+const [productPrice, setProductPrice] = useState(props.productPrice);
+const [quantity, setQuantity] = useState(props.quantity);
+const [description, setDescription] = useState(props.description);
+const [disclaimer, setDisclaimer] = useState(props.disclaimer);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -23,6 +31,24 @@ function ProductInfoCard(props) {
         .catch(err => console.error(err));
       
     };
+
+    const handleUpdate = () => {
+  axios.put(`http://localhost:5002/api/oil/${props.id}`, {
+    productName,
+    size,
+    color,
+    productPrice,
+    quantity,
+    description,
+    disclaimer
+  })
+  .then(res => {
+    console.log(res.data);
+    handleClose();
+    
+  })
+  .catch(err => console.error(err));
+};
 
   return (
     <>
@@ -62,13 +88,13 @@ function ProductInfoCard(props) {
                 <p className={styles.desc_text}>Description: {props.description}</p>
               </div>
               <div className={styles.row_five}>
-                <p className={styles.disclaim_text}>Disclaimer:{props.disclaimer}</p>
+                <p className={styles.disclaim_text}>Disclaimer: {props.disclaimer}</p>
               </div>
 
               <div className={styles.row_six}>
 
               <button className={styles.view_btn}>View Product</button>
-              <Button className={styles.edit_btn} onClick={handleShow}>Edit Product</Button>
+              <button className={styles.edit_btn} onClick={handleShow}>Edit Product</button>
 
         <Modal className={styles.modal} show={show} onHide={handleClose}>
   <Modal.Header closeButton>
@@ -78,37 +104,37 @@ function ProductInfoCard(props) {
     <Form>
     <Form.Group controlId="productName">
       <Form.Label>Product Name</Form.Label>
-      <Form.Control type="text" placeholder="Enter product name" />
+      <Form.Control type="text" placeholder="Enter product name" value={productName} onChange={e => setProductName(e.target.value)} />
     </Form.Group>
 
     <Form.Group controlId="size">
       <Form.Label>Size</Form.Label>
-      <Form.Control type="text" placeholder="Enter size" />
+      <Form.Control type="text" placeholder="Enter size" value={size} onChange={e => setSize(e.target.value)} />
     </Form.Group>
 
     <Form.Group controlId="color">
       <Form.Label>Color</Form.Label>
-      <Form.Control type="text" placeholder="Enter color" />
+      <Form.Control type="text" placeholder="Enter color" value={color} onChange={e => setColor(e.target.value)} />
     </Form.Group>
 
     <Form.Group controlId="productPrice">
       <Form.Label>Price</Form.Label>
-      <Form.Control type="number" placeholder="Enter price" />
+      <Form.Control type="number" placeholder="Enter price" value={productPrice} onChange={e => setProductPrice(e.target.value)} />
     </Form.Group>
 
     <Form.Group controlId="quantity">
       <Form.Label>Quantity</Form.Label>
-      <Form.Control type="number" placeholder="Enter quantity" />
+      <Form.Control type="number" placeholder="Enter quantity" value={quantity} onChange={e => setQuantity(e.target.value)}/>
     </Form.Group>
 
     <Form.Group controlId="description">
       <Form.Label>Description</Form.Label>
-      <Form.Control as="textarea" rows={3} placeholder="Enter description" />
+      <Form.Control as="textarea" rows={3} placeholder="Enter description" value={description} onChange={e => setDescription(e.target.value)} />
     </Form.Group>
 
     <Form.Group controlId="disclaimer">
       <Form.Label>Disclaimer</Form.Label>
-      <Form.Control as="textarea" rows={3} placeholder="Enter disclaimer" />
+      <Form.Control as="textarea" rows={3} placeholder="Enter disclaimer" value={disclaimer} onChange={e => setDisclaimer(e.target.value)}/>
     </Form.Group>
     </Form>
   </Modal.Body>
@@ -116,7 +142,7 @@ function ProductInfoCard(props) {
     <Button variant="secondary" onClick={handleClose}>
       Close   </Button>
     <Button
- undefinedvariant="primary" onClick={handleClose}>
+  undefinedvariant="primary" onClick={handleUpdate}>
       Save Changes
     </Button>
   </Modal.Footer>

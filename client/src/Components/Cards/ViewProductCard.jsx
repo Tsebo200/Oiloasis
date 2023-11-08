@@ -12,8 +12,6 @@ function ViewProductCard() {
     <p className={styles.instock}> instock</p>
     <p className={styles.disclaimer}>disclaimer</p>
     </div>
-
-
 </>
   )
 }
