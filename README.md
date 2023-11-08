@@ -128,7 +128,7 @@ Run the following in the command-line to install all the required dependencies:
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 ### Feature 
-In the register page, the user (Receptionist) needs to add all their information and if they did not there will be a modal (the navy labels) that would indicate the input the user left out. This concept is called Authentication.<br>
+Admin Page with CRUD for oil products<br>
 
 <!-- ![image1](https://github.com/Tsebo200/Oiloasis/blob/main/src/Assets/RegisterModal.png) <br><br> -->
 
@@ -143,6 +143,11 @@ In the register page, the user (Receptionist) needs to add all their information
 ### Functionality 
 <!-- A useNavigate hook was utilised so that when the user clicks on the sign in/create account button, they will be redirected to the dashboard and their email address will be added to the local storage. If the user clicked on the create account button their information will be added to the MYSQL database. The opposite will happen whereas if the user tried to redirect to the dashboard without registering or logging in then they will immediately be redirected to the sign in page, a useNavigate and useEffect was utilised to accomplish this function<br><br> -->
 
+The admin Page
+- Create a new product using axios Post request
+- Read a product with a card displaying once added to the database with a axios Get request
+- Update a products information when tapping on the edit product button on the specific card of the product the axios put request will run
+- Deleting a product by tapping on the bin icon the axios delete request will run
 
 <!-- The functionality for the logOut button was a useNavigate and a sessionStorage.clear(). -->
 <br><br>
@@ -154,7 +159,7 @@ In the register page, the user (Receptionist) needs to add all their information
 <!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
 ## Concept Process
 
-The `Conceptual Process` is the set of actions, activities and research that was done when starting this project. As part of my conceptual process I have sketched wireframes in Figma, I looked at Pinterest for inspiration for colours and I also decided to utilise Material UI for most elements. I created an ER Diagram in Figma then I created a database in MYSQL of the ER Diagram.
+The `Conceptual Process` is the set of actions, activities and research that was done when starting this project. As part of my conceptual process I have sketched wireframes in Figma, I looked at Pinterest for inspiration for colours and I also decided to utilise Material UI for most elements. 
 <br><br>
 
 ### Ideation
@@ -203,6 +208,7 @@ In my frontend I implemented a Google Font called Inter, a box shadow on differe
 * I struggled with create/post method and image upload due to Multer Middleware
 * I mostly enjoyed making UX decisions and implementing it into the project.
 * Learning to send data to MongoDB
+* CRUD functionality working
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
@@ -254,7 +260,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 To see a run through of the application, click below:
 
-[View Demonstration](https://drive.google.com/file/d/1y57Nib7L1EYwqYwTdrxBNcr3E6kLrqJh/view?usp=sharing)
+[View Demonstration](https://drive.google.com/file/d/1YzEBd0FeodJcISlgjZcEwgypkv27OCgK/view?usp=drive_link)
 
 
 See the [open issues](https://github.com/Tsebo200/Oiloasis/issues) for a list of proposed features (and known issues).
