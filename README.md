@@ -177,8 +177,6 @@ This is my first phase
 This is the hover state of my button
 <img src="src/Assets/DashboardBtnHoverImage.png" align="center">
 <br> -->
-
-
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
 
@@ -195,6 +193,10 @@ In my frontend I implemented a Google Font called Inter, a box shadow on differe
 * Utilised Node for React Packages 
 * Implemented Routing with `React-Router v6`.
 * Utilised MongoDB as Database (NoSQL)
+
+### Data Flow Diagram
+<img src="client/src/Assets/DataFlowDiagram.png" align="center"><br><br><br>
+
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
